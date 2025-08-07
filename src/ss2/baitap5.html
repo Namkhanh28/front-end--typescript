@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let phoneBooks = [];
+        function addContact(name, phone, email) {
+            const contact = {
+                name: name,
+                phone: phone,
+                email: email
+            };
+            phoneBooks.push(contact);
+            console.log(`Đã thêm liên hệ: ${name}`);
+        }
+        function displayContact() {
+            if (phoneBooks.length === 0) {
+                console.log("Danh bạ hiện đang trống.");
+            } else {
+                console.log("📒 Danh bạ điện thoại:");
+                phoneBooks.forEach((contact, index) => {
+                    console.log(`--- Liên hệ ${index + 1} ---`);
+                    console.log(`Tên: ${contact.name}`);
+                    console.log(`SĐT: ${contact.phone}`);
+                    console.log(`Email: ${contact.email}`);
+                });
+            }
+        }
+        addContact("An", "0987654321", "an@example.com");
+        addContact("Bình", "0912345678", "binh@example.com");
+
+        displayContact();
+    </script>
+</body>
+
+</html>

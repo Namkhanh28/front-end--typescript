@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function typeConsole(type = "log") {
+            const message = "Đây là type: " + type;
+            if (typeof console[type] === "function") {
+                console[type](message);
+            } else {
+                console.log("Không tìm thấy phương thức console với type: " + type);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

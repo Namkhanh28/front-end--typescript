@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tinhtong(...arrays) {
+            const result = arrays.map(arr => {
+                if (!Array.isArray(arr)) return 0;
+                return arr.reduce((sum, val) => sum + val, 0);
+            });
+            return result;
+        }
+        console.log(tinhtong([1, 2], [6, 7, 8], [12, 8]));
+    </script>
+</body>
+
+</html>

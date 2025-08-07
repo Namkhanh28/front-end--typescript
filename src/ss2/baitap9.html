@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Summary</title>
+  </head>
+
+  <body>
+    <script>
+      let student = {
+        name: "Deft",
+        age: 20,
+        listObject: [
+          { subject: "Math", score: 8 },
+          { subject: "English", score: 9.25 },
+          { subject: "Laos", score: 9.75 },
+          { subject: "IT", score: 10 },
+        ],
+      };
+
+      function getStudentSummary(student) {
+        let { name, age, listObject } = student;
+
+        // Tính điểm trung bình
+        let average =
+          listObject.reduce((acc, value) => acc + value.score, 0) /
+          listObject.length;
+
+        // Xếp loại
+        let rank =
+          average >= 8.5
+            ? "Học sinh giỏi"
+            : average >= 7
+            ? "Học sinh khá"
+            : average >= 5
+            ? "Học sinh trung bình"
+            : "Học sinh yếu";
+
+        // Sắp xếp theo điểm tăng dần
+        let sortedSubjects = [...listObject].sort((a, b) => a.score - b.score);
+        let weakestSubject = sortedSubjects[0];
+        let bestSubject = sortedSubjects[sortedSubjects.length - 1];
+
+        // In kết quả
+        console.log(`${name} is ${age} years old
+Điểm trung bình: ${average.toFixed(2)} → ${rank}
+Môn cao điểm nhất: ${bestSubject.subject} (${bestSubject.score})
+Môn thấp điểm nhất: ${weakestSubject.subject} (${weakestSubject.score})`);
+      }
+
+      getStudentSummary(student);
+    </script>
+  </body>
+</html>
