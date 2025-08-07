@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let person = {
     name: "John Doe",
     age: 30
@@ -11,4 +10,9 @@ let personal = {
 personal.name = "Jane Doe";
 personal.age = 25;
 console.log(`Name da them: ${personal.name}, Age: ${personal.age}`);
+let person1 = {
+    name: "Alice",
+    age: 28,
+    city: "New York"
+};
 //# sourceMappingURL=lythuyet.js.map

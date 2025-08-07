@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function removeDuplicateChars(input) {
     let result = "";
     for (let i = 0; i < input.length; i++) {
@@ -18,4 +16,5 @@ function removeDuplicateChars(input) {
 }
 console.log(removeDuplicateChars("banana"));
 console.log(removeDuplicateChars("hello world"));
+export {};
 //# sourceMappingURL=baitap7.js.map
