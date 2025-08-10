@@ -1,1 +1,1 @@
-{"version":3,"file":"baitap4.js","sourceRoot":"","sources":["../../../src/ss3/bt4/baitap4.ts"],"names":[],"mappings":";;AAAA,IAAI,GAAG,GAAW,GAAG,CAAC,CAAK,cAAc;AACzC,IAAI,GAAG,GAAW,CAAC,CAAC,CAAO,cAAc;AAEzC,oBAAoB;AACpB,oCAAoC;AAEpC,qBAAqB;AACrB,qCAAqC"}
+{"version":3,"file":"baitap4.js","sourceRoot":"","sources":["../../../src/ss3/bt4/baitap4.ts"],"names":[],"mappings":"AAAA,IAAI,GAAG,GAAW,GAAG,CAAC,CAAK,cAAc;AACzC,IAAI,GAAG,GAAW,CAAC,CAAC,CAAO,cAAc;;AAEzC,oBAAoB;AACpB,oCAAoC;AAEpC,qBAAqB;AACrB,qCAAqC"}

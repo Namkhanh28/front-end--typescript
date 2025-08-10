@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let isGreeting = true;
 if (isGreeting == true) {
     console.log("Xin Chao");
@@ -7,4 +5,5 @@ if (isGreeting == true) {
 else {
     console.log("Tam biet");
 }
+export {};
 //# sourceMappingURL=baitap3.js.map

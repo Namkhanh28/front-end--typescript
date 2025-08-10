@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 let firstName = "thanh";
 let lastName = "nguyen";
 function capitalize(word) {
@@ -11,4 +9,5 @@ firstName = capitalize(firstName);
 lastName = capitalize(lastName);
 let fullName = `${firstName} ${lastName}`;
 console.log(fullName);
+export {};
 //# sourceMappingURL=baitap5.js.map

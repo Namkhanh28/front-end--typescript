@@ -1,11 +1,9 @@
 function processInput(input: string | number | boolean): void {
   if (typeof input === 'string') {
-    // Trường hợp string toàn số: dùng regex /^[0-9]+$/
     if (/^\d+$/.test(input)) {
       const num = parseInt(input);
       console.log(num ** 2);
     } else {
-      // Đếm số chữ cái (chỉ a-z hoặc A-Z), bỏ qua số và ký tự đặc biệt
       const letters = input.match(/[a-zA-Z]/g);
       const count = letters ? letters.length : 0;
       console.log(`${count} ký tự chữ cái`);

@@ -17,7 +17,7 @@ const listProduct: Product[] = [
       id: "C01",
       name: "Thiết bị điện tử"
     },
-    discount: 10 // giảm 10%
+    discount: 10
   },
   {
     id: "P002",
@@ -27,7 +27,6 @@ const listProduct: Product[] = [
       id: "C01",
       name: "Thiết bị điện tử"
     }
-    // không giảm giá
   },
   {
     id: "P003",
