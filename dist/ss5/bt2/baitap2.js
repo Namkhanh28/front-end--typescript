@@ -1,23 +1,23 @@
 class Student {
-    constructor(name, age, grade) {
-        this.name = name;
+    constructor(id, age, email) {
+        this.id = id;
         this.age = age;
-        this.grade = grade;
+        this.email = email;
     }
     displayInfo() {
-        console.log(`Name: ${this.name}`);
+        console.log(`ID: ${this.id}`);
         console.log(`Age: ${this.age}`);
-        console.log(`Grade: ${this.grade}`);
+        console.log(`Email: ${this.email}`);
         console.log('------------------');
     }
 }
 let students = [
-    new Student("Alice", 20, "A"),
-    new Student("Bob", 22, "B"),
-    new Student("Charlie", 21, "C")
+    new Student(1, 20, "student1@example.com"),
+    new Student(2, 21, "student2@example.com"),
+    new Student(3, 22, "student3@example.com")
 ];
-for (let i = 0; i < students.length; i++) {
-    students[i].displayInfo();
+for (let student of students) {
+    student.displayInfo();
 }
 export {};
 //# sourceMappingURL=baitap2.js.map
