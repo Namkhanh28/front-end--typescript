@@ -1,4 +1,3 @@
-// Lớp Account
 class Account {
     constructor(id, userName, password, role) {
         this.id = id;
@@ -43,8 +42,8 @@ class userAcc extends Account {
 }
 const user1 = new userAcc("U001", "Nguyễn Văn A", "123456", "user", "active");
 const user2 = new userAcc("U002", "Trần Thị B", "abc123", "user", "banned");
-user1.login("123456"); // Đăng nhập thành công
-user1.logout(); // Đăng xuất thành công
-user2.login("abc123"); // Tài khoản đã bị khóa
+user1.login("123456");
+user1.logout();
+user2.login("abc123");
 export {};
 //# sourceMappingURL=baitap5.js.map

@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/Namkhanh28/React.js-Front-end-/issues"
   },
-  "homepage": "https://github.com/Namkhanh28/React.js-Front-end-#readme"
+  "homepage": "https://github.com/Namkhanh28/React.js-Front-end-#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "typescript": "^5.9.2"
+  }
 }
